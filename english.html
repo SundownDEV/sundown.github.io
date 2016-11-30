@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Développeur full-stack free-lance">
+    <meta name="description" content="Free-lance full-stack web developer">
     <meta name="author" content="Raphaël Cerveaux">
+    <meta name="referrer" content="origin">
 
     <title>Sundown - Free-lance full-stack web developer</title>
 
@@ -99,7 +100,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h2 id="projects" class="section-title"><i class="fa fa-code-fork"></i> Mes projets</h2>
+            <h2 id="projects" class="section-title"><i class="fa fa-code-fork"></i> My projects</h2>
           </div>
 
           <div class="col-md-4 project">
@@ -168,21 +169,24 @@
                 </div>
 
                 <div class="col-md-8">
-                <form method="POST" action="http://formspree.io/sundown@devbreak.fr">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="nom" placeholder="Your name">
-                  </div>
+                  <form method="POST" action="http://formspree.io/sundown@devbreak.fr">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Your name">
+                    </div>
 
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="email" placeholder="Your email address">
-                  </div>
+                    <div class="form-group">
+                      <input type="email" name="_replyto" class="form-control" placeholder="Your email address">
+                    </div>
 
-                  <div class="form-group">
-                    <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
-                  </div>
+                    <div class="form-group">
+                      <textarea class="form-control" name="body" rows="5" placeholder="Your message"></textarea>
+                    </div>
 
-                  <button type="submit" class="btn btn-primary">Send</button>
-                </form>
+                    <input type="hidden"  name="_subject" value="Nouveau message - sundowndev.github.io">
+                    <input type="text" name="_gotcha" style="display:none" />
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </form>
                 </div>
           </div>
       </div>
