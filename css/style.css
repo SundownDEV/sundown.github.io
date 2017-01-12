@@ -148,13 +148,26 @@ body {
 
 
 
-footer {padding-top: 4rem;padding-bottom: 4rem;background-color: #252525;color: #949494;}
+footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #252525;
+  color: #fff;
+
+  -webkit-box-shadow: inset 0px 0px 65px -19px rgba(0,0,0,0.75);
+
+  -moz-box-shadow: inset 0px 0px 65px -19px rgba(0,0,0,0.75);
+
+  box-shadow: inset 0px 0px 65px -19px rgba(0,0,0,0.75);
+
+  background-image: url('../img/pattern.png');
+}
 
 
 
 footer p {
 
-  margin-bottom: .25rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -254,6 +267,20 @@ footer p {
 
   transition: all 0.3s ease-in-out;
 
+}
+
+.project-thumb:hover{
+  opacity: 0.4;
+
+  -webkit-transition: all 0.3s ease-in-out;
+
+  -moz-transition: all 0.3s ease-in-out;
+
+  -o-transition: all 0.3s ease-in-out;
+
+  -ms-transition: all 0.3s ease-in-out;
+
+  transition: all 0.3s ease-in-out;
 }
 
 .section-title{
